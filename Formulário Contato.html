@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Formulário de Contato</title>
+    <link rel="icon" href="logo.png">
+	<style>
+
+        body {
+            background-color: #EFECEC;
+            margin: 0;
+        }
+
+        header {
+            width: 100%;
+            height: 13%;
+            background-color: #1f1c1c;
+            display: flex;
+            /* justify-content: center;
+            align-items: center;*/
+            position: fixed; 
+            top: 0;
+
+
+        }
+
+        .btn-buscar-top {
+            background: url(http://www.devmedia.com.br/imagens/2013/buscar_grey.png) no-repeat;
+            width: 20px;
+            height: 30px;
+            border: none;
+            position: relative;
+            
+            transform: translateY(-32px) translateX(120px);
+
+            
+        }
+
+        .form-busca-site {
+            width: 400px;
+            height: 100%;
+            margin-top: 20px;
+        }
+
+        .btn-text-top {
+            background-color: aliceblue;
+            border: 1px solid rgba(255, 255, 255, .1);
+            border-radius: 20px;
+            color: #8795a2;
+            height: 10px;
+            width: 80%;
+            padding: 15px 50px 15px 50px;
+            margin-top: 23px;
+            translate: 50%;
+            transform: translateY(500px);
+            transform: translateX(-57px);
+
+        }
+
+        .dois {
+            background-color: white;
+            width: 200px;
+            height: 200px;
+            border-top: 4px solid #a22828;
+            border-left: 4px solid #a22828;
+            border-bottom: 10px solid #a22828;
+            border-right: 10px solid #a22828;
+
+
+        }
+
+        .flex-conteiner {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            height: 300px;
+            align-items: center;
+            /* transform: translateY(300px); */
+
+        }
+
+        .sobre {
+
+color: white;
+transform: translateX(1090px) translateY(20px);
+z-index: 1000;
+height: 20px;
+font-family: sans-serif;
+
+}
+
+.peri {
+
+color: white;
+transform: translateX(890px) translateY(20px);
+z-index: 1000;
+height: 20px;
+font-family: sans-serif;
+
+}
+
+
+
+
+        a:visited {
+            color: white;
+        }
+
+        a:link {
+            color: white;
+        }
+		body {
+			background-color: #f2f2f2;
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+		}
+
+		
+
+		form {
+			background-color: #fff;
+			border-radius: 5px;
+			box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+			margin: 30px auto;
+			max-width: 600px;
+			padding: 30px;
+		}
+
+		label {
+			display: block;
+			font-size: 18px;
+			font-weight: bold;
+			margin-bottom: 10px;
+		}
+
+		input[type="text"], input[type="email"], textarea {
+			border: 1px solid #ccc;
+			border-radius: 3px;
+			font-size: 16px;
+			margin-bottom: 20px;
+			padding: 10px;
+			width: 100%;
+		}
+
+		textarea {
+			height: 150px;
+		}
+
+		input[type="submit"] {
+			background-color: #252525;
+			border: none;
+			border-radius: 3px;
+			color: #fff;
+			cursor: pointer;
+			font-size: 18px;
+			padding: 12px 30px;
+			transition: background-color 0.2s ease-in-out;
+		}
+
+		input[type="submit"]:hover {
+			background-color: #005fa6;
+		}
+
+		@media screen and (max-width: 768px) {
+			form {
+				margin: 30px 20px;
+			}
+
+			input[type="submit"] {
+				font-size: 16px;
+				padding: 10px 20px;
+			}
+		}
+		.parte2 {
+			margin-top: 100px;
+
+
+		}
+        .Texto666 {
+            margin-top: 25px;
+            margin-left: 250px;
+
+        }
+	
+	</style>
+</head>
+<body>
+	
+	<header>
+		
+        <img src="Capturar56-removebg-preview.png">
+
+        <p class="sobre"><b><a href="Sobrenos.html">Sobre nós</a></b></p>
+        <p class="peri"><b><a href="site.html">Inicio</a></b></p>
+        <div class="Texto666">
+        <img src="formulario-removebg-preview.png" height="30" width="300">
+        </div>
+    </header>
+<div class="parte2">
+	<form action="processa-form.php" method="post">
+		<label for="nome">Nome:</label>
+		<input type="text" id="nome" name="nome" required>
+		
+		<label for="email">E-mail:</label>
+		<input type="email" id="email" name="email" required>
+		
+		<label for="mensagem">Mensagem:</label>
+		<textarea id="mensagem" name="mensagem" required></textarea>
+		
+		<input type="submit" value="Enviar">
+	</form>
+</div>
+</body>
+
+</html>

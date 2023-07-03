@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MouseMaker_Home</title>
+    <link rel="icon" href="logo.png">
+    <style>
+        body {
+            background-color: #ffffff;
+            margin: 0;
+            background-image: url(Fundo\ siteabas.png);
+        }
+
+        header {
+            width: 100%;
+            height: 90px;
+            background-color: #131313;
+            display: flex;
+           
+            top: 0;
+
+
+        }
+
+        .peri:hover {
+            background-color: black;
+            transition: 0.3s;
+            opacity: 0.7;
+
+        
+        }
+        .prem:hover {
+            background-color: black;
+            transition: 0.3s;
+            opacity: 0.7;
+
+        
+        }
+        .car:hover {
+            background-color: black;
+            transition: 0.3s;
+            opacity: 0.7;
+
+        
+        }
+
+        .cadas:hover {
+            background-color: black;
+            transition: 0.3s;
+            opacity: 0.7;
+
+        
+        }
+
+        .sobre:hover {
+            background-color: black;
+            transition: 0.3s;
+            opacity: 0.7;
+
+        
+        }
+        .entr:hover {
+            background-color: black;
+            transition: 0.3s;
+            opacity: 0.7;
+
+        
+        }
+
+        .btn-buscar-top {
+            background: url(http://www.devmedia.com.br/imagens/2013/buscar_grey.png) no-repeat;
+            width: 20px;
+            height: 30px;
+            border: none;
+            position: relative;
+
+            transform: translateY(-42px) translateX(155px);
+
+
+        }
+
+        .form-busca-site {
+            width: 400px;
+            height: 100%;
+            margin-top: 20px;
+        }
+
+        .btn-text-top {
+            background-color: aliceblue;
+            border: 1px solid rgba(255, 255, 255, .1);
+            border-radius: 20px;
+            color: #8795a2;
+            height: 10px;
+            width: 170px;
+            padding: 15px 50px 15px 50px;
+            margin-top: 30px;
+            translate: 50%;
+            transform: translateY(-10px);
+
+        }
+
+        .zero {
+            background: white url(2.png) no-repeat;
+            width: 200px;
+            height: 200px;
+            border-top: 4px solid #000000;
+            border-left: 4px solid #000000;
+            border-bottom: 10px solid #000000;
+            border-right: 10px solid #000000;
+            margin-bottom: 0;
+            margin-left: -0px;
+
+        }
+
+        .dois {
+            background: white url(3.png) no-repeat;
+            width: 200px;
+            height: 200px;
+            border-top: 4px solid #000000;
+            border-left: 4px solid #000000;
+            border-bottom: 10px solid #000000;
+            border-right: 10px solid #000000;
+            margin-bottom: 0;
+
+
+        }
+
+        .um {
+            background: url(3.png) no-repeat;
+            width: 200px;
+            height: 200px;
+            border-top: 4px solid #e61111;
+            border-left: 4px solid #000000;
+            border-bottom: 10px solid #000000;
+            border-right: 10px solid #000000;
+            margin-right: 20px;
+            margin-bottom: 0;
+        }
+
+        .tres {
+            background: white url(2.png) no-repeat;
+            width: 200px;
+            height: 200px;
+            border-top: 4px solid #8a5a5a;
+            border-left: 4px solid #000000;
+            border-bottom: 10px solid #000000;
+            border-right: 10px solid #000000;
+            margin-left: 20px;
+            margin-bottom: 0;
+
+        }
+       
+
+        .flex-conteiner {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            height: 330px;
+            align-items: center;
+
+        }
+
+        .flex-conteiner3 {
+            height: 70px;
+            margin-top: 20px;
+        }
+
+        .flex-conteiner2 {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            height: 290px;
+            align-items: flex-end;
+
+        }
+        .flex-conteiner54 {
+           height: 20px;
+           width: 50px;
+           margin-top: 100px;
+           color: #131313;
+        }
+
+        a:visited {
+            color: white;
+        }
+
+        a:link {
+            color: white;
+        }
+
+        .sobre {
+            font-family: sans-serif;
+            color: white;
+            transform: translateX(870px) translateY(15px);
+            z-index: 1000;
+            height: 20px;
+        }
+
+        .peri {
+            font-family: sans-serif;
+            color: white;
+            transform: translateX(10px) translateY(15px);
+            z-index: 1000;
+            height: 20px;
+
+        }
+
+        .prem {
+            font-family: sans-serif;
+            color: white;
+            transform: translateX(270px) translateY(15px);
+            z-index: 1000;
+            height: 20px;
+        }
+
+        .car {
+            font-family: sans-serif;
+            color: white;
+            transform: translateX(35px) translateY(15px);
+            z-index: 1000;
+            height: 20px;
+        }
+
+        .cadas {
+            font-family: sans-serif;
+            color: white;
+            transform: translateX(790px) translateY(15px);
+            z-index: 1000;
+            height: 20px;
+        }
+
+        .entr {
+            font-family: sans-serif;
+            color: white;
+            transform: translateX(890px) translateY(15px);
+            z-index: 1000;
+            height: 20px;
+        }
+
+        .rato {
+            background: url(ratoss.png) no-repeat;
+            width: 300px;
+            height: 188px;
+            margin-top: 40px;
+            margin-left: 30px;
+
+        }
+
+        .mouse {
+            background: url(moiuse.png);
+            width: 313px;
+            height: 203px;
+            margin-top: 50px;
+            margin-right: 40px;
+        }
+
+        .home {
+            background: url(https://www.shareicon.net/data/256x256/2015/12/26/693470_internet_512x512.png) no-repeat;
+            width: 40px;
+            height: 40px;
+            border: none;
+            margin: 0;
+            position: absolute;
+            transform: translateX(30px) translateY(20px);
+            color: black;
+
+        }
+
+        .cri {
+            
+            color: #000000;
+            font-size: 40px;
+            font-weight: bold;
+            font-family: 'Quicksand';
+            margin-left: 30px;
+            transform: translateY(30px);
+        }
+        .boxing {
+            color: #000000;
+            font-size: 40px;
+            font-weight: bold;
+            font-family: 'Quicksand';
+            margin-left: 30px;
+            transform: translateY(30px);
+        }
+
+
+        hr {
+            margin: 40px 0;
+            width: 50%;
+            color: #000000;
+            border: solid 2px;
+            margin-left: 30px;
+            border-radius: 5px;
+        }
+
+        .Texto666 {
+            
+            margin-left: -680px;
+            margin-top: 20px;
+        }
+
+        main {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      padding: 20px;
+    }
+
+    /* PRODUTOS */
+    .product {
+      flex: 0 0 200px;
+      margin: 10px;
+      padding: 15px;
+      border: 5px solid #413d3d;
+      text-align: center;
+      font-family: sans-serif;
+    }
+
+    /* IMAGEM PRODUTO */
+    .product img {
+      width: 100%;
+      max-height: 150px;
+      object-fit: cover;
+      margin-bottom: 10px;
+    }
+
+
+    /* BOTAO DE COMPRA VERDE */
+    .checkout {
+      background-color: #16a711;
+      color: #fff;
+      padding: 10px 15px;
+      border: none;
+      cursor: pointer;
+    }
+
+
+    /* ADICIONAR AO CARRINHO */
+    .add-to-cart {
+      background-color: #ba0000;
+      color: #fff;
+      padding: 5px 10px;
+      border: none;
+      cursor: pointer;
+    }
+
+    /* COR DE INTERACAO ADICIONAR AO CARRINHO */
+    .add-to-cart:hover {
+      background-color: #fa6363;
+    }
+    footer {
+      background-color:rgb(0, 0, 0);
+      color: #fff;
+      padding: 20px;
+      text-align: right;
+      
+    }
+        .TEXTO000{
+          font-family: sans-serif;
+          transform: translateX(-1200px);
+          margin-top: 0px;
+          font-size: small;
+        }
+        .TEXTO101{
+          font-size: small;
+          font-family: sans-serif;
+          transform: translateX(-915px);
+          margin-top: -28px;
+        }
+        .TEXTO24{
+          font-size: small;
+          font-family: sans-serif;
+          transform: translateX(-1050px);
+          margin-top: -28px;
+        }
+    </style>
+
+
+
+</head>
+
+<body>
+ 
+
+    <header>
+        <p class="home" ></p>
+        <p class="sobre"><b><a href="Sobrenos.html">Sobre nós</a></b></p>
+        <p class="peri"><b><a href="site.html" >Inicio</a></b></p>
+        <p class="prem"><b><a href="premium.html">Premium</a></b></p>
+        <p class="car"><b><a href="carrinho.html">Carrinho</a></b></p>
+        <p class="cadas"><b><a href="Cadastro01.html">Cadastrar-se</a></b></p>
+        <p class="entr"><b><a href="entrar2.html">Entrar</a></b></p>
+        
+        <form action="">
+            <input class="btn-text-top" type="text" name="txtsearch" placeholder="Pesquisar no site">
+            <div>
+                <button class="btn-buscar-top" type="submit"></button>
+            </div>
+        </form>
+
+        <div class="Texto666">
+            <img src="Capturar54-removebg-preview.png" height="50px" width="70px"></img>
+        </div>
+    </header>
+
+    
+    </div>
+
+     <div class="flex-conteiner3">
+        <div class="cri">Criações da Comunidade</div>
+        <hr>
+    
+    </div>
+    <div class="flex-conteiner54"></div>
+
+     <!-- <div class="flex-conteiner2">
+        <div class="tres"></div>
+        <div class="zero"></div>
+        <div class="dois"></div>
+        <div class="um"></div>  -->
+
+    <!-- </div>
+     <div class="flex-conteiner2">
+        <div class="oito"></div>
+        <div class="sete"></div>
+        <div class="seis"></div>
+        <div class="cinco"></div> -->
+
+    </div>
+
+    <main>
+       
+        <div class="product">
+          <img src="4.png" alt="Product 1">
+          <h2>Produto 1
+          </h2>
+          <p>R$ 99,99</p>
+          <button class="add-to-cart">Adicionar ao Carrinho</button>
+        </div>
+    
+        <div class="product">
+          <img src="1.png" alt="Product 2">
+          <h2>Produto 2</h2>
+          <p>R$ 49,99</p>
+          <button class="add-to-cart">Adicionar ao Carrinho</button>
+        </div>
+    
+        <div class="product">
+            <img src="2.png" alt="Product 3">
+            <h2>Produto 3</h2>
+            <p>R$ 69,99</p>
+            <button class="add-to-cart">Adicionar ao Carrinho</button>
+          </div>
+    
+          <div class="product">
+            <img src="3.png" alt="Product 4">
+            <h2>Produto 4</h2>
+            <p>R$ 59,99</p>
+            <button class="add-to-cart">Adicionar ao Carrinho</button>
+          </div>
+    
+          <div class="product">
+            <img src="GAbinete-removebg-preview.png" alt="Product 5">
+            <h2>Produto 5</h2>
+            <p>R$ 59,99</p>
+            <button class="add-to-cart">Adicionar ao Carrinho</button>
+          </div>
+    
+          <div class="product">
+            <img src="controle.PNG" alt="Product 6">
+            <h2>Produto 6</h2>
+            <p>R$ 59,99</p>
+            <button class="add-to-cart">Adicionar ao Carrinho</button>
+          </div>
+    
+          <div class="product">
+            <img src="6.png" alt="Product 7">
+            <h2>Produto 7</h2>
+            <p>R$ 59,99</p>
+            <button class="add-to-cart">Adicionar ao Carrinho</button>
+          </div>
+    
+          <div class="product">
+            <img src="7.png" alt="Product 8">
+            <h2>Produto 8</h2>
+            <p>R$ 59,99</p>
+            <button class="add-to-cart">Adicionar ao Carrinho</button>
+          </div>
+    
+          <div class="product">
+            <img src="8.png" alt="Product 9">
+            <h2>Produto 9</h2>
+            <p>R$ 59,99</p>
+            <button class="add-to-cart">Adicionar ao Carrinho</button>
+          </div>
+    
+          <div class="product">
+            <img src="9.png" alt="Product 10">
+            <h2>Produto 10</h2>
+            <p>R$ 59,99</p>
+            <button class="add-to-cart">Adicionar ao Carrinho</button>
+          </div>
+          
+      </main>
+</body>
+
+</html>
+<footer>
+    <div class="TEXTO000">
+    <p><a href="Formulário Contato.html">Acessibilidade</a></p>
+  </div>
+    <div class="TEXTO101">
+      <p><a href="Formulário Contato.html">Encontrou um erro?</a></p>
+  </div>
+  <div class="TEXTO24">
+    <p><a href="Sobrenos.html">Sobre a Mouse Maker</a></p>
+</div>
+  </footer>

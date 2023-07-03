@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Histórico de Compras</title>
+  <style>
+    /* Estilos gerais */
+    body {
+      background-color: #D7E7EF;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+        a:visited {
+            color: white;
+        }
+
+        a:link {
+            color: white;
+        }
+
+
+        .sobre {
+            font-family: sans-serif;
+            color: white;
+            transform: translateX(870px) translateY(15px);
+            z-index: 1000;
+            height: 20px;
+        }
+
+        .peri {
+            font-family: sans-serif;
+            color: white;
+            transform: translateX(10px) translateY(15px);
+            z-index: 1000;
+            height: 20px;
+
+        }
+
+        .prem {
+            font-family: sans-serif;
+            color: white;
+            transform: translateX(270px) translateY(15px);
+            z-index: 1000;
+            height: 20px;
+        }
+
+        .car {
+            font-family: sans-serif;
+            color: white;
+            transform: translateX(35px) translateY(15px);
+            z-index: 1000;
+            height: 20px;
+        }
+
+        .cadas {
+            font-family: sans-serif;
+            color: white;
+            transform: translateX(790px) translateY(15px);
+            z-index: 1000;
+            height: 20px;
+        }
+
+        .entr {
+            font-family: sans-serif;
+            color: white;
+            transform: translateX(890px) translateY(15px);
+            z-index: 1000;
+            height: 20px;
+        }
+    /* Cabeçalho */
+    header {
+      width: 100%;
+      height: 90px;
+      background-color: #131313;
+      display: flex;
+      /* position: fixed; */
+      top: 0;
+    }
+
+
+    .peri:hover {
+        background-color: black;
+        transition: 0.3s;
+        opacity: 0.7;
+    }
+
+    .prem:hover {
+        background-color: black;
+        transition: 0.3s;
+        opacity: 0.7;
+    }
+
+    .car:hover {
+        background-color: black;
+        transition: 0.3s;
+        opacity: 0.7;
+    }
+
+    .cadas:hover {
+        background-color: black;
+        transition: 0.3s;
+        opacity: 0.7;
+
+    }
+
+    .sobre:hover {
+        background-color: black;
+        transition: 0.3s;
+        opacity: 0.7;
+  
+    }
+
+    .entr:hover {
+        background-color: black;
+        transition: 0.3s;
+        opacity: 0.7;
+
+    }
+
+    .btn-buscar-top {
+        background: url(http://www.devmedia.com.br/imagens/2013/buscar_grey.png) no-repeat;
+        width: 20px;
+        height: 30px;
+        border: none;
+        position: relative;
+
+        transform: translateY(-42px) translateX(155px);
+
+    }
+
+    .form-busca-site {
+        width: 400px;
+        height: 100%;
+        margin-top: 20px;
+    }
+
+    .btn-text-top {
+        background-color: aliceblue;
+        border: 1px solid rgba(255, 255, 255, .1);
+        border-radius: 20px;
+        color: #8795a2;
+        height: 10px;
+        width: 170px;
+        padding: 15px 50px 15px 50px;
+        margin-top: 30px;
+        translate: 50%;
+        transform: translateY(-10px);
+
+    }
+
+    /* Container principal */
+    /* .container {
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #ddd;
+        border: 1px solid #000000;
+        box-shadow: 0px 0px 5px rgba(0,0,0,0.1);
+        transform: translateX(-250px);
+    } */
+
+    /* Título do histórico de compras */
+    .titulo {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    /* Lista de compras */
+    .compras-lista {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    /* Item de compra */
+    .compras-item {
+      transform: translateY(40px);
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+
+    /* Ícone de status da compra */
+    .compras-icon {
+      margin-right: 10px;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background-color: #ddd;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+    /* Detalhes da compra */
+    .compras-detalhes {
+      flex: 1;
+      padding: 10px;
+      background-color: #fff;
+      border: 1px solid #ddd;
+    }
+
+    /* Título do produto */
+    .compras-produto {
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    /* Descrição do produto */
+    .compras-descricao {
+      font-size: 14px;
+      color: #777;
+      margin-bottom: 10px;
+    }
+
+    /* Data da compra */
+    .compras-data {
+      font-size: 12px;
+      color: #aaa;
+    }
+
+    /* footer {
+      background-color:rgb(0, 0, 0);
+      color: #fff;
+      padding: 5px;
+      width: 100%;
+      height: 20%;
+      text-align: right;
+      position: relative;
+} */
+
+        footer {
+          background-color:rgb(0, 0, 0);
+          color: #fff;
+          padding: 20px;
+          text-align: right;
+          transform: translateY(286px);
+        }
+        .TEXTO000{
+          font-family: sans-serif;
+          transform: translateX(-1200px);
+          margin-top: 0px;
+          font-size: small;
+        }
+        .TEXTO101{
+          font-size: small;
+          font-family: sans-serif;
+          transform: translateX(-915px);
+          margin-top: -28px;
+        }
+        .TEXTO24{
+          font-size: small;
+          font-family: sans-serif;
+          transform: translateX(-1050px);
+          margin-top: -28px;
+        }
+        .tres {
+          transform: translateY(200px);
+            background: rgb(0, 0, 0);
+            width: 1300px;
+            height: 10px;
+            
+        }
+  </style>
+</head>
+<body>
+  
+  <header>
+    <p class="home" ></p>
+    <p class="sobre"><b><a href="Sobrenos.html">Sobre nós</a></b></p>
+    <p class="peri"><b><a href="site.html" >Inicio</a></b></p>
+    <p class="prem"><b><a href="premium.html">Premium</a></b></p>
+    <p class="car"><b><a href="carrinho.html">Carrinho</a></b></p>
+    <p class="cadas"><b><a href="Cadastro01.html">Cadastrar-se</a></b></p>
+    <p class="entr"><b><a href="entrar2.html">Entrar</a></b></p>
+
+    <form action="">
+        <input class="btn-text-top" type="text" name="txtsearch" placeholder="Pesquisar no site">
+        <div>
+            <button class="btn-buscar-top" type="submit"></button>
+        </div>
+    </form>
+</header>
+
+ 
+
+
+     <div class="container">
+    <h1 class="titulo">Histórico de Compras</h1>
+    <ul class="compras-lista">
+    <li class="compras-item">
+        <div class="compras-icon">1</div>
+        <div class="compras-detalhes">
+        <div class="compras-produto">Produto 1</div>
+        <div class="compras-descricao">Descrição do Produto 1</div>
+        <div class="compras-data">Data da Compra: 01/01/2023</div>
+    </div>
+      </li>
+      <li class="compras-item">
+        <div class="compras-icon">2</div>
+        <div class="compras-detalhes">
+        <div class="compras-produto">Produto 2</div>
+        <div class="compras-descricao">Descrição do Produto 2</div>
+        <div class="compras-data">Data da Compra: 02/01/2023</div>
+    </div>
+     </li>
+      <li class="compras-item">
+        <div class="compras-icon">3</div>
+        <div class="compras-detalhes">
+        <div class="compras-produto">Produto 3</div>
+        <div class="compras-descricao">Descrição do Produto 3</div>
+        <div class="compras-data">Data da Compra: 03/01/2023</div>
+    </div>
+     </li> 
+     <li class="compras-item">
+      <div class="compras-icon">3</div>
+      <div class="compras-detalhes">
+      <div class="compras-produto">Produto 4</div>
+      <div class="compras-descricao">Descrição do Produto 3</div>
+      <div class="compras-data">Data da Compra: 03/01/2023</div>
+  </div>
+   </li> 
+      
+    
+
+
+
+
+     <!-- </li> -->
+      <!-- <li class="compras-item">
+        <div class="compras-icon">5</div>
+        <div class="compras-detalhes">
+        <div class="compras-produto">Produto 5</div>
+        <div class="compras-descricao">Descrição do Produto 5</div>
+        <div class="compras-data">Data da Compra: 05/01/2023</div>
+    </div> -->
+
+
+    <!-- <footer>
+      <p>Total: R$ <span id="total">0,00</span></p>
+      <button class="checkout">Comprar</button>
+    </footer> -->
+    
+    <footer>
+      <div class="TEXTO000">
+      <p><a href="Formulário Contato.html">Acessibilidade</a></p>
+    </div>
+      <div class="TEXTO101">
+        <p><a href="Formulário Contato.html">Encontrou um erro?</a></p>
+    </div>
+    <div class="TEXTO24">
+      <p><a href="Sobrenos.html">Sobre a Mouse Maker</a></p>
+  </div>
+    </footer>

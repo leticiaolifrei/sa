@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MouseMaker_cart</title>
+    <link rel="icon" href="logo.png">
+    <style>
+      
+        body {
+          background-size: 100%;
+            background-color: #ffffff;
+            margin: 0;
+            background-image: url(fundodocarrinho.png);
+        }
+
+        header {
+
+            width: 100%;
+            height: 13%;
+            background-color: #131313;
+            display: flex;
+            position: f ixed;
+            top: 0;
+
+
+        }
+
+        .peri:hover {
+            background-color: black;
+            transition: 0.3s;
+            opacity: 0.7;
+
+        
+        }
+        .prem:hover {
+            background-color: black;
+            transition: 0.3s;
+            opacity: 0.7;
+
+        
+        }
+        .car:hover {
+            background-color: black;
+            transition: 0.3s;
+            opacity: 0.7;
+
+        
+        }
+
+        .cadas:hover {
+            background-color: black;
+            transition: 0.3s;
+            opacity: 0.7;
+
+        
+        }
+
+        .sobre:hover {
+            background-color: black;
+            transition: 0.3s;
+            opacity: 0.7;
+
+        
+        }
+        .entr:hover {
+            background-color: black;
+            transition: 0.3s;
+            opacity: 0.7;
+
+        
+        }
+
+        /* .btn-buscar-top {
+            background: url(http://www.devmedia.com.br/imagens/2013/buscar_grey.png) no-repeat;
+            width: 20px;
+            height: 30px;
+            
+            position: absolute;
+
+            transform: translateY(-42px) translateX(140px);
+        } */
+
+
+        .form-busca-site {
+            width: 400px;
+            height: 100%;
+            margin-top: 20px;
+        }
+
+
+        /* .btn-text-top {
+            background-color: aliceblue;
+            border: 1px solid rgba(255, 255, 255, .1);
+            border-radius: 20px;
+            color: #8795a2;
+            height: 10px;
+            width: 170px;
+            padding: 15px 50px 15px 50px;
+            margin-top: 30px;
+            translate: 50%;
+            transform: translateY(-10px);
+
+        } */
+
+        a:visited {
+            color: white;
+        }
+
+        a:link {
+            color: white;
+        }
+
+        /* .sobre {
+            font-family: sans-serif;
+            color: white;
+            transform: translateX(460px) translateY(15px);
+            z-index: 1000;
+            height: 20px;
+        } */
+
+        .peri {
+            font-family: sans-serif;
+            color: white;
+            transform: translateX(550px) translateY(15px);
+            z-index: 1000;
+            height: 20px;
+
+        }
+
+        .prem {
+            font-family: sans-serif;
+            color: white;
+            transform: translateX(650px) translateY(15px);
+            z-index: 1000;
+            height: 20px;
+        }
+
+        /* .car {
+            font-family: sans-serif;
+            color: white;
+            transform: translateX(690px) translateY(15px);
+            z-index: 1000;
+            height: 20px;
+        } */
+
+        .cadas {
+            font-family: sans-serif;
+            color: white;
+            transform: translateX(750px) translateY(15px);
+            z-index: 1000;
+            height: 20px;
+        }
+
+        .entr {
+            font-family: sans-serif;
+            color: white;
+            transform: translateX(850px) translateY(15px);
+            z-index: 1000;
+            height: 20px;
+        }
+        .Hist {
+            font-family: sans-serif;
+            color: white;
+            transform: translateX(950px) translateY(15px);
+            z-index: 1000;
+            height: 20px;
+        }
+        .rato {
+            background: url(ratoss.png) no-repeat;
+            width: 300px;
+            height: 188px;
+            margin-top: 40px;
+            margin-left: 30px;
+
+        }
+
+        .mouse {
+            background: url(moiuse.png);
+            width: 313px;
+            height: 203px;
+            margin-top: 50px;
+            margin-right: 40px;
+        }
+
+        .home {
+            background: url(https://www.shareicon.net/data/256x256/2015/12/26/693470_internet_512x512.png) no-repeat;
+            width: 40px;
+            height: 40px;
+            border: none;
+            margin: 0;
+            position: absolute;
+            transform: translateX(30px) translateY(20px);
+            color: black;
+
+        }
+
+        .cri {
+          position:static;
+            color: #000000;
+            font-size: 40px;
+            font-weight: bold;
+            font-family: 'Quicksand';
+            margin-left: 30px;
+            transform: translateY(-410px);
+        }
+
+
+        hr {
+            margin: 40px 0;
+            width: 38%;
+            color: #000000;
+            border: solid 2px;
+            margin-left: 30px;
+            border-radius: 5px;
+            transform: translateY(-420px);
+        }
+
+         /* TAMANHO LAYOUT PRODUTOS */
+    main {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      padding: 20px;
+    }
+
+    /* PRODUTOS */
+    .product1 {
+      flex: 0 0 200px;
+      margin: 10px;
+      padding: 15px;
+      border: 5px solid #413d3d;
+      text-align: center;
+      transform: translateY(-400px);
+      margin-left: -240px;
+    }
+    .product3 {
+      flex: 0 0 200px;
+      margin: 10px;
+      padding: 15px;
+      border: 5px solid #413d3d;
+      text-align: center;
+      transform: translateY(-400px);
+    }
+    .product2 {
+      flex: 0 0 200px;
+      margin: 10px;
+      padding: 15px;
+      border: 5px solid #413d3d;
+      text-align: center;
+      transform: translateY(-20px);
+      transform: translateX(-521px);
+    }
+    /* IMAGEM PRODUTO */
+    .product img {
+      width: 100%;
+      max-height: 150px;
+      object-fit: cover;
+      margin-bottom: 10px;
+    }
+
+    /* RODAPE */
+    footer {
+      background-color:rgb(0, 0, 0);
+      color: #fff;
+      padding: 20px;
+      text-align: right;
+      
+    }
+
+    /* BOTAO DE COMPRA VERDE */
+    .checkout {
+      background-color: #16a711;
+      color: #fff;
+      padding: 20px 30px;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    /* COR DE INTERACAO BOTAO COMPRA */
+    .checkout:hover {
+      background-color: #45a049;
+    }
+
+    /* ADICIONAR AO CARRINHO */
+    .add-to-cart {
+      background-color: #0070ba;
+      color: #fff;
+      padding: 5px 10px;
+      border: none;
+      cursor: pointer;
+    }
+
+    /* COR DE INTERACAO ADICIONAR AO CARRINHO */
+    .add-to-cart:hover {
+      background-color: #63a9fa;
+    }
+
+    /* .Texto666{
+        position:unset;
+            font-family:monospace ;
+            color: rgb(255, 255, 255);
+            transform: translateX(-300px) translateY(-3px);
+            z-index: 1000;
+            
+            font-size: xx-large;
+       } */
+       .tres {
+            background-color: rgb(19, 19, 19);
+            width: 5px;
+            height: 1100px;
+           margin-top: -1100px;
+           transform: translateX(600px);
+        }
+
+        .Texto667{
+          transform: translateX(-250px);
+        }
+        /* .maisumtexto{
+          font-family: sans-serif;
+        } */
+        .TEXTO000{
+          font-family: sans-serif;
+          transform: translateX(-1200px);
+          margin-top: -45px;
+          font-size: small;
+        }
+        .TEXTO101{
+          font-size: small;
+          font-family: sans-serif;
+          transform: translateX(-915px);
+          margin-top: -28px;
+        }
+        .TEXTO24{
+          font-size: small;
+          font-family: sans-serif;
+          transform: translateX(-1050px);
+          margin-top: -28px;
+        }
+    </style>
+
+    <header>
+        <p class="home" ></p>
+       
+        <p class="peri"><b><a href="site.html" >Inicio</a></b></p>
+        <p class="prem"><b><a href="premium.html">Premium</a></b></p>
+        <p class="cadas"><b><a href="Cadastro01.html">Cadastrar-se</a></b></p>
+        <p class="entr"><b><a href="entrar2.html">Entrar</a></b></p>
+        <p class="Hist"><b><a href="Histórico-compras.html">Histórico</a></b></p>
+        <!-- <p class="Texto666"><b>Mouse Maker</b></p> -->
+
+        <div class="Texto667">
+          <img src="Capturar56-removebg-preview.png" height="70px" width="120px"></img>
+      </div>
+       
+        <!-- <form action="">
+          <input class="btn-text-top" type="text" name="txtsearch" placeholder="Pesquisar no site">
+          <div>
+              <button class="btn-buscar-top" type="submit"></button>
+          </div>
+      </form> -->
+          
+      
+
+  
+    </header>
+
+    <div class="flex-conteiner">
+        <div class="rato"></div>
+        <div class="mouse"></div>
+
+    </div>
+
+    <div class="flex-conteiner3">
+        <div class="cri">Finalizando a Compra</div>
+        <hr>
+
+    </div>
+
+  <main>
+    <div class="product1">
+      <img src="4.png" alt="Product 1">
+      <h2>Produto 1</h2>
+      <p>R$ 99,99</p>
+      <button class="add-to-cart">Remover</button>
+    </div>
+
+    <div class="product3">
+      <img src="4.png" alt="Product 2">
+      <h2>Produto 2</h2>
+      <p>R$ 49,99</p>
+      <button class="add-to-cart">Remover</button>
+    </div>
+
+ 
+      <div class="product2">
+        <img src="4.png" alt="Product 8">
+        <h2>Produto 8</h2>
+        <p>R$ 59,99</p>
+        <button class="add-to-cart">Remover</button>
+      </div>
+
+      <div class="product2">
+        <img src="4.png" alt="Product 9">
+        <h2>Produto 9</h2>
+        <p>R$ 59,99</p>
+        <button class="add-to-cart">Remover</button>
+      </div>
+
+ 
+  </main>
+  <div class="flex-conteiner2">
+    <div class="tres"></div>
+  </div>
+</body>
+</head>
+</html>
+
+  <footer>
+    
+    <!-- <p class="maisumtexto">Total: R$ <span id="total">0,00</span></p> -->
+    <button class="checkout">FINALIZAR COMPRA</button>
+    <div class="TEXTO000">
+    <p><a href="carrinho.html">Acessibilidade</a></p>
+  </div>
+    <div class="TEXTO101">
+      <p><a href="Formulário Contato.html">Encontrou um erro?</a></p>
+  </div>
+  <div class="TEXTO24">
+    <p><a href="Sobrenos.html">Sobre a Mouse Maker</a></p>
+</div>
+  </footer>
+
+  <script>
+    const addToCartButtons = document.querySelectorAll('.add-to-cart');
+const totalElement = document.getElementById('total');
+let total = 0;
+
+addToCartButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    const priceElement = button.previousElementSibling;
+    const price = parseFloat(priceElement.textContent.replace('R$ ', ''));
+    total += price;
+    totalElement.textContent = total.toFixed(2);
+  });
+});
+
+const checkoutButton = document.querySelector('.checkout');
+checkoutButton.addEventListener('click', () => {
+  alert(`Total da compra: R$ ${total.toFixed(2)}`);
+  total = 0;
+  totalElement
+})
+

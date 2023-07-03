@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MouseMaker_Premium</title>
+    <link rel="icon" href="logo.png">
+    <style>
+        body {
+            background-size: 100%;
+           background-image: url(g);
+            background-repeat: no-repeat;
+            
+            margin: 0;
+            background-image: url(Fundo\ siteabas.png);
+        
+        }
+
+        header {
+            width: 100%;
+            height: 13%;
+            background-color: #131313;
+            display: flex;
+            /* justify-content: center;
+    align-items: center;*/
+            position: fixed;
+            top: 0;
+
+
+        }
+
+        .peri:hover {
+            background-color: black;
+            transition: 0.3s;
+            opacity: 0.7;
+
+        
+        }
+        .prem:hover {
+            background-color: black;
+            transition: 0.3s;
+            opacity: 0.7;
+
+        
+        }
+        .car:hover {
+            background-color: black;
+            transition: 0.3s;
+            opacity: 0.7;
+
+        
+        }
+
+        .cadas:hover {
+            background-color: black;
+            transition: 0.3s;
+            opacity: 0.7;
+
+        
+        }
+
+        .sobre:hover {
+            background-color: black;
+            transition: 0.3s;
+            opacity: 0.7;
+
+        
+        }
+        .entr:hover {
+            background-color: black;
+            transition: 0.3s;
+            opacity: 0.7;
+
+        
+        }
+
+        .btn-buscar-top {
+            background: url(http://www.devmedia.com.br/imagens/2013/buscar_grey.png) no-repeat;
+            width: 20px;
+            height: 30px;
+            border: none;
+            position: relative;
+
+            transform: translateY(-42px) translateX(35px);
+
+
+        }
+
+        .seleção {
+            background-color: #363636;
+            height: 100%;
+            width: 120px;
+            transform: translateY(-16px) translateX(-35px);
+        }
+
+        .btn-text-top {
+            background-color: aliceblue;
+            border: 1px solid rgba(255, 255, 255, .1);
+            border-radius: 20px;
+            color: #8795a2;
+            height: 10px;
+            width: 170px;
+            padding: 15px 50px 15px 50px;
+            margin-top: 30px;
+            translate: 50%;
+            transform: translateY(-10px) translateX(-120px);
+
+        }
+
+
+
+        .dois {
+            position:static;
+            background-color: rgb(19, 19, 19);
+            width: 675px;
+            height: 757px;
+            margin-top: -400px;
+
+        }
+
+        .um {
+            background-color: white;
+            width: 200px;
+            height: 200px;
+            border-top: 4px solid #a22828;
+            border-left: 4px solid #a22828;
+            border-bottom: 10px solid #a22828;
+            border-right: 10px solid #a22828;
+            margin-right: 30px;
+        }
+
+        .tres {
+            position: absolute;
+            background-color: rgb(19, 19, 19);
+            width: 380px;
+            height: 130px;
+            margin-left: 880px;
+            margin-top: -405px;
+            border-radius: 15px;
+
+        }
+
+
+        .flex-conteiner {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            height: 300px;
+            align-items: center;
+
+
+            /* transform: translateY(300px); */
+
+        }
+
+        a:visited {
+            color: rgb(255, 255, 255);
+        }
+
+        a:link {
+            color: rgb(255, 255, 255);
+        }
+
+        .sobre {
+            font-family: sans-serif;
+            color: white;
+            transform: translateX(870px) translateY(15px);
+            z-index: 1000;
+            height: 20px;
+        }
+
+        .peri {
+            font-family: sans-serif;
+            color: white;
+            transform: translateX(10px) translateY(15px);
+            z-index: 1000;
+            height: 20px;
+
+        }
+
+        .prem {
+            font-family: sans-serif;
+            color: white;
+            transform: translateX(270px) translateY(15px);
+            z-index: 1000;
+            height: 20px;
+        }
+
+        .car {
+            font-family: sans-serif;
+            color: white;
+            transform: translateX(35px) translateY(15px);
+            z-index: 1000;
+            height: 20px;
+        }
+
+        .cadas {
+            font-family: sans-serif;
+            color: white;
+            transform: translateX(790px) translateY(15px);
+            z-index: 1000;
+            height: 20px;
+        }
+
+        .entr {
+            font-family: sans-serif;
+            color: white;
+            transform: translateX(890px) translateY(15px);
+            z-index: 1000;
+            height: 20px;
+        }
+        .entr {
+            font-family: sans-serif;
+            color: white;
+            transform: translateX(890px) translateY(15px);
+            z-index: 1000;
+            height: 20px;
+        }
+
+        .rato {
+            background: url(ratos.png) no-repeat;
+            width: 231px;
+            height: 145px;
+
+        }
+
+        .TEXTO1{
+            position:relative;
+            font-size: xx-large;
+            font-family: sans-serif;
+            color: aliceblue;
+            margin-top: -550px;
+            margin-left: 130px;
+
+        }
+        .TEXTO2{
+            position:static;
+            font-size: 45px;
+            font-family: monospace;
+            color: rgb(0, 0, 0);
+            margin-top: -62px;
+            margin-left: 980px;
+
+        }
+        .TEXTO3{
+            
+            font-size: small;
+            font-family: sans-serif;
+            color: rgb(255, 255, 255);
+            margin-top: 70px;
+            margin-left: 910px;
+            transform: translateY(0px);
+
+        }
+        .lista1{
+            position:static;
+            font-size: medium;
+            font-family: sans-serif;
+            color: #ffffff;
+            margin-top: -40px;
+            margin-left: 100px;
+        }
+        .btn1 {
+            position:static;
+            background-color: rgb(0, 0, 0);
+            color: rgb(0, 0, 0);
+            width: 200px;
+            height: 70px;
+            border: 2px #ffffff solid;
+            border-radius: 7px;
+            margin-left: 160px;
+            margin-top: 40px;
+            transform: translateY(-20px);
+        }
+        .TEXTO000{
+          font-family: sans-serif;
+          transform: translateX(-1200px);
+          margin-top: -0px;
+          font-size: small;
+        }
+        .TEXTO101{
+          font-size: small;
+          font-family: sans-serif;
+          transform: translateX(-915px);
+          margin-top: -28px;
+        }
+        .TEXTO24{
+          font-size: small;
+          font-family: sans-serif;
+          transform: translateX(-1050px);
+          margin-top: -28px;
+        }
+        footer {
+          background-color:rgb(0, 0, 0);
+          color: #fff;
+          padding: 20px;
+          text-align: right;
+    
+        }
+    </style>
+
+
+
+</head>
+
+<body>
+
+    <header>
+      
+        <p class="sobre"><b><a href="Sobrenos.html">Sobre nós</a></b></p>
+        <p class="peri"><b><a href="site.html">Inicio</a></b></p>
+        <p class="prem"><b><a href="premium.html">Premium</a></b></p>
+        <p class="car"><b><a href="carrinho.html">Carrinho</a></b></p>
+        <p class="cadas"><b><a href="Cadastro01.html">Cadastrar-se</a></b></p>
+        <p class="entr"><b><a href="entrar2.html">Entrar</a></b></p>
+        <p class="seleção"></p>
+  
+        <form action="">
+            <input class="btn-text-top" type="text" name="txtsearch" placeholder="Pesquisar no site">
+            <div>
+                <button class="btn-buscar-top" type="submit"></button>
+            </div>
+        </form>
+    </header>
+
+
+    <div class="flex-conteiner"></div>
+        <div class="dois"></div>
+        <div class="tres"></div>
+    <!-- hora da div -->
+
+
+    <div class="TEXTO1">
+        <p><b>Melhorias Premium</b></p>
+    </div>
+    <div class="TEXTO2">
+        <p><b>Upgrade</b></p>
+    </div>
+    <div class="TEXTO3">
+        <p>Com o nosso premium, você pode</p>
+        <p>ultilizar os melhores designs de mouse da comunidade,</p>
+         <p>além de ganhar diversas vantagens!</p>
+    </div>
+
+ <div class="lista1">
+    <ul>
+        <li>Designs Melhores.</li>  <br>
+        <li>Recebimento mais rápido do produto em casa.</li> <br>
+        <li>Descontos semanais em produtos.</li> <br>
+        <li>Informações privilegiadas sobre novos produtos.</li> <br>
+      </ul>
+    </div>
+
+
+
+    <button class="btn1">
+        
+        <p><a href="carrinho.html">Inscrever-se R$24,99 ao mês</p></a>
+        
+    </button>
+
+</body>
+
+</html>
+<footer>
+    <div class="TEXTO000">
+    <p><a href="Formulário Contato.html">Acessibilidade</a></p>
+  </div>
+    <div class="TEXTO101">
+      <p><a href="Formulário Contato.html">Encontrou um erro?</a></p>
+  </div>
+  <div class="TEXTO24">
+    <p><a href="Sobrenos.html">Sobre a Mouse Maker</a></p>
+</div>
+  </footer>
