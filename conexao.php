@@ -1,6 +1,6 @@
 <?php
 //Configuração do banco de dados
-$host = 'localhost:3307';
+$host = 'localhost';
 $usuario = 'root';
 $senha = '';
 $banco = 'projeto_sa';
