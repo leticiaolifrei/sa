@@ -14,7 +14,7 @@
           background-size: 100%;
             background-color: #ffffff;
             margin: 0;
-            background-image: url(fundodocarrinho.png);
+            background-image: url(Fundo\ siteabas.png);
         }
 
         header {
@@ -192,7 +192,7 @@
             height: 40px;
             border: none;
             margin: 0;
-            position: absolute;
+            
             transform: translateX(30px) translateY(20px);
             color: black;
 
@@ -211,7 +211,7 @@
 
         hr {
             margin: 40px 0;
-            width: 38%;
+            width: 44%;
             color: #000000;
             border: solid 2px;
             margin-left: 30px;
@@ -237,6 +237,7 @@
       text-align: center;
       transform: translateY(-400px);
       margin-left: -240px;
+      font-family: sans-serif; 
     }
     .product3 {
       flex: 0 0 200px;
@@ -245,6 +246,7 @@
       border: 5px solid #413d3d;
       text-align: center;
       transform: translateY(-400px);
+      font-family: sans-serif;
     }
     .product2 {
       flex: 0 0 200px;
@@ -254,6 +256,7 @@
       text-align: center;
       transform: translateY(-20px);
       transform: translateX(-521px);
+      font-family: sans-serif;
     }
     /* IMAGEM PRODUTO */
     .product img {
@@ -310,13 +313,7 @@
             
             font-size: xx-large;
        } */
-       .tres {
-            background-color: rgb(19, 19, 19);
-            width: 5px;
-            height: 1100px;
-           margin-top: -1100px;
-           transform: translateX(600px);
-        }
+       
 
         .Texto667{
           transform: translateX(-250px);
@@ -346,30 +343,24 @@
 
     <header>
         <p class="home" ></p>
-       
-        <p class="peri"><b><a href="site.html" >Inicio</a></b></p>
+       <!-- links -->
+        <p class="peri"><b><a href="site V3 (aberto a opniões).html" >Inicio</a></b></p>
         <p class="prem"><b><a href="premium.html">Premium</a></b></p>
         <p class="cadas"><b><a href="Cadastro01.html">Cadastrar-se</a></b></p>
         <p class="entr"><b><a href="entrar2.html">Entrar</a></b></p>
         <p class="Hist"><b><a href="Histórico-compras.html">Histórico</a></b></p>
-        <!-- <p class="Texto666"><b>Mouse Maker</b></p> -->
+
 
         <div class="Texto667">
           <img src="Capturar56-removebg-preview.png" height="70px" width="120px"></img>
       </div>
-       
-        <!-- <form action="">
-          <input class="btn-text-top" type="text" name="txtsearch" placeholder="Pesquisar no site">
-          <div>
-              <button class="btn-buscar-top" type="submit"></button>
-          </div>
-      </form> -->
+
           
       
 
   
     </header>
-
+<!-- container que segura a pagina -->
     <div class="flex-conteiner">
         <div class="rato"></div>
         <div class="mouse"></div>
@@ -381,33 +372,33 @@
         <hr>
 
     </div>
-
+<!-- produtos -->
   <main>
     <div class="product1">
-      <img src="4.png" alt="Product 1">
-      <h2>Produto 1</h2>
+      <img src="2.png" alt="Product 1">
+      <h2>Mousepad Pikachu</h2>
       <p>R$ 99,99</p>
       <button class="add-to-cart">Remover</button>
     </div>
 
     <div class="product3">
-      <img src="4.png" alt="Product 2">
-      <h2>Produto 2</h2>
+      <img src="1.png" alt="Product 2">
+      <h2>Mouse personalizado</h2>
       <p>R$ 49,99</p>
       <button class="add-to-cart">Remover</button>
     </div>
 
  
       <div class="product2">
-        <img src="4.png" alt="Product 8">
-        <h2>Produto 8</h2>
+        <img src="3.png" alt="Product 8">
+        <h2>Headset Mousemaker</h2>
         <p>R$ 59,99</p>
         <button class="add-to-cart">Remover</button>
       </div>
 
       <div class="product2">
         <img src="4.png" alt="Product 9">
-        <h2>Produto 9</h2>
+        <h2>Gabinete gamer 2017</h2>
         <p>R$ 59,99</p>
         <button class="add-to-cart">Remover</button>
       </div>
@@ -423,10 +414,9 @@
 
   <footer>
     
-    <!-- <p class="maisumtexto">Total: R$ <span id="total">0,00</span></p> -->
     <button class="checkout">FINALIZAR COMPRA</button>
     <div class="TEXTO000">
-    <p><a href="carrinho.html">Acessibilidade</a></p>
+    <p><a href="">Acessibilidade</a></p>
   </div>
     <div class="TEXTO101">
       <p><a href="Formulário Contato.html">Encontrou um erro?</a></p>
@@ -435,7 +425,7 @@
     <p><a href="Sobrenos.html">Sobre a Mouse Maker</a></p>
 </div>
   </footer>
-
+<!-- JS -->
   <script>
     const addToCartButtons = document.querySelectorAll('.add-to-cart');
 const totalElement = document.getElementById('total');

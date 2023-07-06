@@ -89,9 +89,8 @@
             width: 20px;
             height: 30px;
             border: none;
-            position: relative;
-
-            transform: translateY(-42px) translateX(35px);
+            margin-left: 115px;
+            transform: translateY(-31px);
 
 
         }
@@ -111,13 +110,13 @@
             height: 10px;
             width: 170px;
             padding: 15px 50px 15px 50px;
-            margin-top: 30px;
-            translate: 50%;
-            transform: translateY(-10px) translateX(-120px);
+            margin-top: 20px;
+            margin-left: 105px;
+            
 
         }
 
-
+/* flex containers que deixam a pagina em ordem */
         .dois {
             background-color: rgb(0, 0, 0);
             width: 260px;
@@ -138,7 +137,7 @@
         }
 
         .tres {
-            position: sticky;
+            
             background-color: rgb(0, 0, 0);
             width: 210px;
             height: 30px;
@@ -159,7 +158,7 @@
             /* transform: translateY(300px); */
 
         }
-
+/* links e suas caracteristicas */
         a:visited {
             color: rgb(255, 255, 255);
         }
@@ -171,48 +170,51 @@
         .sobre {
             font-family: sans-serif;
             color: white;
-            transform: translateX(870px) translateY(15px);
+            margin-left: 105px;
             z-index: 1000;
             height: 20px;
+            margin-top: 30px;
         }
 
         .peri {
             font-family: sans-serif;
             color: white;
-            transform: translateX(10px) translateY(15px);
+            margin-left:105px;
             z-index: 1000;
             height: 20px;
-
+            margin-top: 30px;
         }
 
         .prem {
             font-family: sans-serif;
             color: white;
-            transform: translateX(270px) translateY(15px);
+            margin-left: 105px;
             z-index: 1000;
             height: 20px;
+            margin-top: 30px;
         }
-
         .car {
             font-family: sans-serif;
             color: white;
-            transform: translateX(35px) translateY(15px);
+            margin-left: 105px;
             z-index: 1000;
             height: 20px;
+            margin-top: 30px;
         }
-
         .cadas {
             font-family: sans-serif;
             color: white;
-            transform: translateX(790px) translateY(15px);
+            margin-left: 105px;
             z-index: 1000;
             height: 20px;
+            margin-top: 30px;
         }
 
         .entr {
             font-family: sans-serif;
             color: white;
-            transform: translateX(890px) translateY(15px);
+            margin-left: 105px;
+            margin-top: -15px;
             z-index: 1000;
             height: 20px;
         }
@@ -220,8 +222,7 @@
         .rato {
             background: url(ratos.png) no-repeat;
             width: 231px;
-            height: 145px;
-
+            height: 145px
         }
 
         .img {
@@ -235,7 +236,7 @@
             margin-left: 50px;
             font-size: x-large;
         }
-
+/* textos da pagina */
         .TEXTO2{
         font-family: sans-serif;
         margin-top: -275px;
@@ -338,7 +339,7 @@
           color: #fff;
           padding: 20px;
           text-align: right;
-          transform: translateY(362px);
+          margin-top: 416px;
     
         }
     </style>
@@ -348,23 +349,27 @@
 </head>
 
 <body>
-
+<!-- header -->
     <header>
         
-        <p class="sobre"><b><a href="Sobrenos.html">Sobre nós</a></b></p>
-        <p class="peri"><b><a href= "site.html">Inicio</a></b></p>
-        <p class="prem"><b><a href="premium.html">Premium</a></b></p>
+        
+        <p class="peri"><b><a href= "site V3 (aberto a opniões).html">Inicio</a></b></p>
         <p class="car"><b><a href="carrinho.html">Carrinho</a></b></p>
-        <p class="cadas"><b><a href="Cadastro01.html">Cadastrar-se</a></b></p>
-        <p class="entr"><b><a href="entrar2.html">Entrar</a></b></p>
-        <p class="seleção"></p>
-    
+        <p class="prem"><b><a href="premium.html">Premium</a></b></p>
+
         <form action="">
             <input class="btn-text-top" type="text" name="txtsearch" placeholder="Pesquisar no site">
             <div>
                 <button class="btn-buscar-top" type="submit"></button>
             </div>
         </form>
+
+        <p class="sobre"><b><a href="Sobrenos.html">Sobre nós</a></b></p>
+        <p class="car"><b><a href="entrar2.html">Entrar</a></b></p>
+        <p class="cadas"><b><a href="Cadastro01.html">Cadastrar-se</a></b></p>
+        
+    
+       
     </header>
     
     <div class="TEXTO1">
@@ -375,9 +380,9 @@
 
     <div class="flex-conteiner">
         <div class="dois"></div>
-        <!-- <div class="tres"></div> -->
+        
     </div>
-
+<!-- textos da pagina -->
     <div class="TEXTO2">
         <p><b>Redes sociais:</b></p>
     </div>
@@ -401,9 +406,7 @@
         <p>SAC - 0000-0000</p>
     </div>
 
-    
-
-
+    <!-- imagens da pagina -->
     <div class="imagem1">
         <img src="Inta.png" height="23px" width="23px"></img>
     </div>
@@ -417,19 +420,19 @@
 
 
    
-
+    <footer>
+        <!-- links do footer -->
+        <div class="TEXTO000">
+        <p><a href="">Acessibilidade</a></p>
+      </div>
+        <div class="TEXTO101">
+          <p><a href="Formulário Contato.html">Encontrou um erro?</a></p>
+      </div>
+      <div class="TEXTO24">
+        <p><a href="Sobrenos.html">Sobre a Mouse Maker</a></p>
+    </div>
+      </footer>
 
 </body>
 
 </html>
-<footer>
-    <div class="TEXTO000">
-    <p><a href="">Acessibilidade</a></p>
-  </div>
-    <div class="TEXTO101">
-      <p><a href="Formulário Contato.html">Encontrou um erro?</a></p>
-  </div>
-  <div class="TEXTO24">
-    <p><a href="Sobrenos.html">Sobre a Mouse Maker</a></p>
-</div>
-  </footer>
