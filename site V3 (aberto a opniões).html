@@ -336,8 +336,15 @@
         }
     </style>
 
-
-
+<script>
+  function addItem(name, price) {
+    const item = { name, price };
+    const cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
+    cartItems.push(item);
+    localStorage.setItem('cartItems', JSON.stringify(cartItems));
+    alert('O item foi adicionado ao carrinho!');
+  }
+</script>
 </head>
 
 <body>
@@ -384,71 +391,71 @@
           <img src="1.png" alt="Product 1">
           <h2>Mouse
           </h2>
-          <p>R$ 99,99</p>
-          <button class="add-to-cart">Adicionar ao Carrinho</button>
+          <p>R$ 99,90</p>
+          <button class="add-to-cart" onclick="addItem('Produto 1', 99.90)">Adicionar ao Carrinho</button>
         </div>
     
         <div class="product">
           <img src="2.png" alt="Product 2">
           <h2>Mousepad</h2>
-          <p>R$ 49,99</p>
-          <button class="add-to-cart">Adicionar ao Carrinho</button>
+          <p>R$ 49,90</p>
+          <button class="add-to-cart" onclick="addItem('Produto 2', 49.90)">Adicionar ao Carrinho</button>
         </div>
     
         <div class="product">
             <img src="3.png" alt="Product 3">
             <h2>Headset</h2>
-            <p>R$ 69,99</p>
-            <button class="add-to-cart">Adicionar ao Carrinho</button>
+            <p>R$ 69,90</p>
+            <button class="add-to-cart" onclick="addItem('Produto 3', 69.90)">Adicionar ao Carrinho</button>
           </div>
     
           <div class="product">
             <img src="4.png" alt="Product 4">
             <h2>Gabinete gamer</h2>
-            <p>R$ 59,99</p>
-            <button class="add-to-cart">Adicionar ao Carrinho</button>
+            <p>R$ 59,90</p>
+            <button class="add-to-cart" onclick="addItem('Produto 4', 59.90)">Adicionar ao Carrinho</button>
           </div>
     
           <div class="product">
             <img src="5.png" alt="Product 5">
             <h2>Monitor gamer 27 polegadas</h2>
-            <p>R$ 59,99</p>
-            <button class="add-to-cart">Adicionar ao Carrinho</button>
+            <p>R$ 109,90</p>
+            <button class="add-to-cart" onclick="addItem('Produto 5', 109.90)">Adicionar ao Carrinho</button>
           </div>
     
           <div class="product">
             <img src="6.png" alt="Product 6">
             <h2>Controle Remoto</h2>
-            <p>R$ 39,99</p>
-            <button class="add-to-cart">Adicionar ao Carrinho</button>
+            <p>R$ 39,90</p>
+            <button class="add-to-cart" onclick="addItem('Produto 6', 39.90)">Adicionar ao Carrinho</button>
           </div>
     
           <div class="product">
             <img src="7.png" alt="Product 7">
             <h2>SSD 512GB</h2>
-            <p>R$ 59,99</p>
-            <button class="add-to-cart">Adicionar ao Carrinho</button>
+            <p>R$ 159,90</p>
+            <button class="add-to-cart" onclick="addItem('Produto 7', 159.90)">Adicionar ao Carrinho</button>
           </div>
     
           <div class="product">
             <img src="8.png" alt="Product 8">
             <h2>HD externo</h2>
-            <p>R$ 59,99</p>
-            <button class="add-to-cart">Adicionar ao Carrinho</button>
+            <p>R$ 89,90</p>
+            <button class="add-to-cart" onclick="addItem('Produto 8', 89.90)">Adicionar ao Carrinho</button>
           </div>
     
           <div class="product">
             <img src="9.png" alt="Product 9">
             <h2>Placa de video RX 580 8GB</h2>
-            <p>R$ 59,99</p>
-            <button class="add-to-cart">Adicionar ao Carrinho</button>
+            <p>R$ 929,90</p>
+            <button class="add-to-cart" onclick="addItem('Produto 9', 929.90)">Adicionar ao Carrinho</button>
           </div>
     
           <div class="product">
             <img src="10.png" alt="Product 10">
             <h2>Cabo USB</h2>
-            <p>R$ 59,99</p>
-            <button class="add-to-cart">Adicionar ao Carrinho</button>
+            <p>R$ 19,90</p>
+            <button class="add-to-cart" onclick="addItem('Produto 10', 19.90)">Adicionar ao Carrinho</button>
           </div>
           
       </main>
